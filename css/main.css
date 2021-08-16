@@ -60,7 +60,12 @@ a {
 
 .search-ul {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
+}
+
+.search-ru-lang {
+   display: flex;
+   align-items: flex-end;
 }
 
 .search-ul li {
