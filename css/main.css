@@ -180,5 +180,29 @@ a {
    color: #05B135;
 }
 
+/* ------- MAIN ------- */
 
+time {
+   color: #6B6D97;
+}
+
+h3 {
+   color: #202020;
+}
+
+.news-ul {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 0;
+   margin: 30px auto;
+}
+
+.news-li {
+   width: 390px;
+}
+
+.news-link h3 {
+   font-size: 17px;
+   line-height: 20px;
+}
 
