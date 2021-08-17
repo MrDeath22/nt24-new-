@@ -68,6 +68,11 @@ a {
    align-items: flex-end;
 }
 
+.search-ru-lang a {
+   display: flex;
+   align-items: flex-end;
+}
+
 .search-ul li {
    padding: 20px;
    padding-right: 0;
