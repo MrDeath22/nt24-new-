@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-   width: 1320px;
+   width: 1240px;
    margin: 0 auto;
 }
 
@@ -48,14 +48,35 @@ a {
 
 .kurs-valut li {
    padding-left: 20px;
-   color: #285193;
+   color: #7A7A7A;
    font-size: 16px;
+   font-weight: bold;
+   font-weight: normal;
+}
+
+.before::before {
+   content: "";
+   display: inline-block;
+   background-repeat: no-repeat;
+}
+
+.kurs-before::before {
+   width: 15px;
+   height: 15px;
+   color: #285193;
    font-weight: bold;
 }
 
-.kurs-valut span {
-   color: #7A7A7A;
-   font-weight: normal;
+.before-dolr::before {
+   content: "$"
+}
+
+.before-rubl::before {
+   content: "₽"
+}
+
+.before-euro::before {
+   content: "€"
 }
 
 .search-ul {
@@ -66,6 +87,12 @@ a {
 .search-ru-lang {
    display: flex;
    align-items: flex-end;
+}
+
+.ru-before::before {
+   width: 25px;
+   height: 22px;
+   background-image: url("/img/ru.svg");
 }
 
 .search-ru-lang a {
@@ -87,12 +114,14 @@ a {
 .search-ul button a {
    display: flex;
    align-items: center;
-   padding: 3px 12px;
+   padding: 3px 5px;
    color: #fff;
 }
 
-.search-ul button img {
-   padding-right: 10px;
+.tg-before::before {
+   width: 25px;
+   height: 20px;
+   background-image: url("/img/telegram.svg");
 }
 
 .navigation-ul {
@@ -112,7 +141,7 @@ a {
 
 .reklama img {
    margin: 20px 0;
-   width: 1320px;
+   width: 100%;
 }
 
 .covid-div {
@@ -122,6 +151,30 @@ a {
    padding: 30px;
    background-color: #F6F6F9;
    border-radius: 10px;
+}
+
+.covid-before::before {
+   width: 40px;
+   height: 50px;
+   background-image: url("/img/covid.svg");
+}
+
+.infected-before::before {
+   width: 40px;
+   height: 40px;
+   background-image: url("/img/infected.svg")
+}
+
+.recovered-before::before {
+   width: 40px;
+   height: 40px;
+   background-image: url("/img/recovered.svg")
+}
+
+.dead-before::before {
+   width: 40px;
+   height: 40px;
+   background-image: url("/img/dead.svg");
 }
 
 .covid-info {
@@ -192,7 +245,7 @@ h3 {
 
 .news-ul {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
    padding: 0;
    margin: 30px auto;
 }
@@ -205,4 +258,29 @@ h3 {
    font-size: 17px;
    line-height: 20px;
 }
+
+.notfilication-div {
+   background: rgba(239, 186, 84, 0.18);
+   border-radius: 5px;
+}
+
+.notfilication-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px;
+}
+
+.notfilication-title h3 {
+   margin: 0;
+   height: 50px;
+}
+
+.notfil-before::before {
+   width: 50px;
+   height: 50px;
+   background-image: url("/img/bell.svg");
+   line-height: 50px;
+}
+
 
